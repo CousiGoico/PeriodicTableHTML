@@ -1,0 +1,75 @@
+
+
+=======================
+        EVENTS
+=======================
+
+WINDOW EVENTS
+
+    - onafterprint: event throw when the document is printed.
+    - onbeforeprint: event throw before the document is printed.
+    - onbeforeunload: event throw before that the document is unloaded.
+    - onerror: event throw when error is happened.
+    - onhashchange: event throw when one part of the url is changed.
+    - onload: event throw when the document is loaded.
+    - onmessage: event throw when the document received a message.
+    - onoffline: event throw when the browser start as offline.
+    - ononline: event throw when the browser start as online.
+    - onpagehide: event throw when the user close the page.
+    - onpageshow: event throw when the user open the page.
+    - onpopstate: event throw when the history is changed.
+    - onresize: event throw when the document is resize.
+    - onstorage: event throw when the area of web storage is changed.
+    - onunload: event throw when the document is unloaded.
+    
+
+FORM EVENTS
+
+    - onblur: event throw when the control lose the focus.
+    - onchange: event throw when the control change the attribute value.
+    - oncontextmenu: event throw when the context menu of control is triggered.
+    - onfocus: event throw when the control get the focus.
+    - oninput: event throw when the control get input of user.
+    - oninvalid: event throw when the element is invalid.
+    - onreset: event throw when a button type reset is clicked.
+    - onsearch: event throw when a user write in input type search.
+    - onselect: event throw when a user select text in a control.
+    - onsubmit: event throw when a button type submit is clicked.
+
+
+KEYBOARD EVENTS
+
+    - onkeypress: event throw when the user press a key of keyboard in the control.
+    - onkeydown: event throw when the user lower a key of keyboard in the control.
+    - onkeyup: event throw when the user lifts a key of keyboard in the control.
+
+
+MOUSE EVENTS
+
+    - onclick: event throw when the user click with one button of the mouse.
+    - ondblclick: event throw when the user do double click with one button of the mouse.
+    - onmousedown: event throw when the user lowers the one button of the mouse.
+    - onmouseup: event throw when the user lifts the one button of the mouse.
+    - onmouseover: event throw when the user pass over the control with the mouse pointer.
+    - onmousemove: event throw when the user move the mouse pointer over the control.
+    - onmouseout: event throw when the user move out the mouse pointer out the control.
+    - onwheel: event throw when the user use the wheel up or down over the control.
+    
+
+DRAG EVENTS
+
+    - ondrag: event throw when the control is dragged.
+    - ondragend: event throw when finish the drag operation.
+    - ondragenter: event throw when the control has been dragged to a valid drop target.
+    - ondragleave: event throw when the control has been dragged out of the target.
+    - ondragover: event throw when the control is been dragged over the target.
+    - ondragstart: event throw when the control start the drag operation.
+    - ondrop: event throw when the control is being dropped.
+    - onscroll: event throw when the scroll of control is being scrolled.
+
+
+CLIPBOARD EVENTS
+
+    - oncopy: event throw when the user copies the content of control.
+    - oncut: event throw when the user cuts the content of control.
+    - onpaste: event throw when the user pastes the content of control.

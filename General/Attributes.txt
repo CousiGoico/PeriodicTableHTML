@@ -1,0 +1,22 @@
+
+
+==========================
+        ATTRIBUTES
+==========================
+
+GLOBAL ATTRIBUTES
+
+    - accesskey: shortcut key to put focus in the control.
+    - class: class of styles.
+    - contenteditable: the control is editable or not.
+    - dir: direction the text. Possible values: auto, ltr (left to right), rtl -> (right to left).
+    - draggable: the control is draggable or not.
+    - hidden: indicate if the control should be rendered.
+    - id: unique identifier in the DOM.
+    - lang: language of the control.
+    - spellcheck: should be check his grammar and spelling.
+    - style: attributes of styles.
+    - tabindex: tabbing order.
+    - title: tooltip.
+    - translate: the content of control should be translated.
+    - data-*: to save private data.
