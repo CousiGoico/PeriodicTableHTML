@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="Link.js"></script>
+ 
+    <!-- Examples -->
+    <link href="default.css" rel="stylesheet" title="Default Style" onload="sheetLoaded()" onerror="sheetError()">
+    <link href="fancy.css" rel="alternate stylesheet" title="Fancy">
+    <link href="basic.css" rel="alternate stylesheet" title="Basic">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon144.png" />
+    <link href="desktop.css" rel="stylesheet" media="screen and (min-width: 600px)" />
+    <link href="MilkyMania.ttf" as="font" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
     <title>Document</title>
 </head>
 <body>
-    
+    <!--
+        Relationship with a external resource. Usually use to relation with a stylesheet.
+        This tag hasn't a close tag, and only can use in the header tag.
+        Has compatibility with all browsers but not all configuration is permitted in all browsers.
+        Attributes: 
+            - as: is required when rel="preload" (audio, document, embed, fetch, ...).
+            - crossorigin: use the CORS (anonymous, use-credentials)
+            - disabled (it's not standard, it's possible that the browser ignore this attribute): disabled the relationship.
+            - href: url of the external resource.
+            - hreflang: language of the external resource. It's only information.
+            - integrity (experimental, it's probably that change in the future): get the metadata of the resource.
+            - media (it's probably not support for all browsers): media type of the resource.
+            - methods (it's not standard, it's possible that the browser ignore this attribute): specify how to send the information.
+            - referrerpolicy (experimental, it's probably that change in the future): text that indicate the referrer when is received the resource (no-referrer-when-downgrade, origin, origin-when-cross-origin, unsafe-url)
+            - rel: relation with the resource (alternate, archives, author, bookmark, external, stylesheet, tag, ...).
+            - sizes: sizes of icons as a external resources.
+            - target (it's not standard, it's possible that the browser ignore this attribute): name of frame or window that show the representation about the resource.
+            - title: name of stylesheet when you have alternatives stylesheets.
+            - type: content type that is binded.
+        Events:
+            - onload: event throw when the external resource is loaded.
+            - onerror: event throw when happends a error when try to load a external resource.
+    -->
 </body>
 </html>
