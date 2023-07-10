@@ -7,6 +7,62 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!--
+        Represent a group of elements of the form.
+        Can use tag legend as title of the group.
+        Has complety compatibility with all browsers.
+                        
+        Attributes: 
+            - Global attributes
+            - disabled: to disable the controls inside of this tag.
+            - form: id of form assigned.
+            - name: name of group.
+        Events:
+            - mouse events
+            - keyboard events            
+    -->
+
+    <form>
+        <fieldset>
+          <legend>Choose your favorite team</legend>
+      
+          <input type="radio" id="RealMadrid" name="Teams" value="RM">
+          <label for="RealMadrid">Real Madrid</label><br>
+      
+          <input type="radio" id="Girona" name="Teams" value="G">
+          <label for="Girona">Girona</label><br>
+      
+          <input type="radio" id="RealSociedad" name="Teams" value="RS">
+          <label for="RealSociedad">Real Sociedad</label><br>
+
+          <input type="radio" id="Sevilla" name="Teams" value="S">
+          <label for="Sevilla">Sevilla</label><br>
+
+          <input type="radio" id="Betis" name="Teams" value="B">
+          <label for="Betis">Betis</label>
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset disabled="true">
+          <legend>Choose your favorite team</legend>
+      
+          <input type="radio" id="RealMadrid" name="Teams" value="RM">
+          <label for="RealMadrid">Real Madrid</label><br>
+      
+          <input type="radio" id="Girona" name="Teams" value="G">
+          <label for="Girona">Girona</label><br>
+      
+          <input type="radio" id="RealSociedad" name="Teams" value="RS">
+          <label for="RealSociedad">Real Sociedad</label><br>
+
+          <input type="radio" id="Sevilla" name="Teams" value="S">
+          <label for="Sevilla">Sevilla</label><br>
+
+          <input type="radio" id="Betis" name="Teams" value="B">
+          <label for="Betis">Betis</label>
+        </fieldset>
+    </form>
+      
 </body>
 </html>
