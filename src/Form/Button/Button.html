@@ -5,8 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script type="text/JavaScript" src="Button.js"></script>
 </head>
 <body>
-    
+    <!--
+        Represent a button control in the dom.
+        Has complety compatibility with all browsers.
+        Can interactive with their with a mouse, keyboard, fingder, voice command, or other assistive technolgy.
+        
+        Attributes: 
+            - autofocus: bool that specify if the button is focus when the document is loaded.
+            - disabled: bool that indicate if the button is disabled.
+            - form: (when the button is submit) the form name associate with the button.
+            - formaction: (when the button is submit) url that process the information when submitted.
+            - formenctype: (when the button is submit) indicate how to encode the information is submitted
+                * application/x-www-form-urlencoded: the default value.
+                * multipart/form-data: to send input values.
+                * text/plain: shouldn't use in a real form submission.
+            - formmethod: (when the button is submit) method with is used to submit.
+            - formnovalidate: (when the button is submit) bool that specify if is necesary validate the form.
+            - formtarget: (when the button is submit) indicate where is display the response
+                * _self: load the respone in a same context.
+                * _blank: load the response in a new tab or window.
+                * _parent: load the response in a parent frame.
+                * _top: load the response in a top frame.
+            - name: name of the button.
+            - popovertarget (experimental): id of the popover element.
+            - popovertargetaction (experimental): specify the action to be performed on a popover
+                * hide: hide a shown popover.
+                * show: show a hidden popover.
+                * toggle: (defalut) toggle a popover between showing and hiding.
+            - type: behaviour of the button
+                * submit: (defalut) submits the form data to the server when is clicked.
+                * reset: resets all the controls with their initial values.
+                * button: haven't a behavior by default, is necessary develop his behavior with JS.
+            - value: value associated to be submitted.
+        Events:
+            - mouse events
+            - keyboard events            
+    -->
+
+    <form id="MyForm">
+        <button type="submit" form="MyForm" formaction="/action_page2.aspx" formmethod="get" formnovalidate="true" formtarget="_blank">Submit form</button>
+        <input type="text" placeholder="Introduzca un valor" style="width:300px">
+        <button type="reset">Reset form</button>
+        <button type="button" onclick="OnClickButton()">Click me</button>
+    </form>
+
+    <button popovertarget="mypopover">Toggle the popover</button>
+    <div id="mypopover" popover>Popover content</div>
 </body>
 </html>
