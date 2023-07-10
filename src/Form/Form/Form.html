@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form tag</title>
 </head>
 <body>
-    
+    <!--
+        Represent a group of elements of the form.
+        Can use tag legend as title of the group.
+        Has complety compatibility with all browsers.
+                        
+        Attributes: 
+            - Global attributes
+            - accept-charset: character encodings the server accepts (utf-8).
+            - action: url that process the form when is submitted. This value can be overriden by a formaction attribute of a button. This attribute is ignored when the attribute method="dialog".
+            - autocapitalize: (non standard, only by iOS Safari) how textual should be automatically capitalized
+                * none: no automatic capitalization.
+                * sentences (default): capitalize the first letter of each sentence.
+                * words: capitalize the first letter of each word.
+                * characters: capitalize all characters.
+            - autocomplete: if input elements can be automatically completed by the browser.
+            - enctype: content type of the submit
+                * application/x-www-form-urlencoded: the default value.
+                * multipart/form-data: to send input values.
+                * text/plain: shouldn't use in a real form submission. For debuggin purposes.
+            - method: method HTTP to the submit
+                * post: form data sent as the request body.
+                * get: (default) form data append to the url with ? separator.
+                * dialog: when the form is inside a dialog tag, causes a submit event to be fired without data or clearing the form.
+            - name: name of form.
+            - novalidate: bool that indicate should or shouldn't be validate the form.
+            - rel: specifies the relationship between the current document and the linked document.
+                * external: the referenced document is not a part of the current site.
+                * help: help document.
+                * licence: copyright document.
+                * next: the next document in a selection.
+                * nofollow: links to an unendorsed document (is used by searching engine).
+                * noopener: browse to the new destiny resource without granting the new browsing context access.
+                * noreferrer: the browser should not send a HTTP referrer header if the user follows the hyperlink.
+                * opener:browse to the new destiny resource within granting the new browsing context access.
+                * prev: previous document in a selection
+                * search: links to a search tool for the document.
+            - target: indicate where is display the response
+                * _self: load the respone in a same context.
+                * _blank: load the response in a new tab or window.
+                * _parent: load the response in a parent frame.
+                * _top: load the response in a top frame.           
+    -->
+
+    <form action="/action_page.aspx" method="get">
+        <label for="FirstNameControl">First name:</label>
+        <input type="text" id="FirstNameControl" name="FirstNameControl"><br><br>
+        <label for="LastNameControl">Last name:</label>
+        <input type="text" id="LastNameControl" name="LastNameControl"><br><br>
+        <label for="BirthdateControl">Birthdate:</label>
+        <input type="date" id="BirthdateControl" name="BirthdateControl"><br><br>
+        <label for="AddressControl">Address:</label>
+        <input type="text" id="AddressControl" name="AddressControl"><br><br>
+        <input type="submit" value="Submit">
+      </form>
 </body>
 </html>
