@@ -4,9 +4,130 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script type="text/javascript" src="Input.js"></script>
+    <title>Input tag</title>
 </head>
 <body>
-    
+    <!--
+        Represent a control where you can introduce a value.
+        Has complety compatibility with all browsers.
+                        
+        Attributes: 
+            - Global attributes
+            - accept: filter of the extension of file that you can selected when the type is file.
+            - alt: alternative text when type is image.
+            - autocomplete: (on/off) should have autocomplete enabled.
+            - autofocus: get the focus when the document is loaded.
+            - capture: media which you can select a file upload (camera, video, ...).
+            - checked: indicate if the control should be checked when the type is checkbox.
+            - dirname: direction of the text in the control.
+            - disabled: indicate if the control should be disabled or enabled.
+            - form: id of the form that the control is inside.
+            - formaction: (when the input type is button) url that process the information when submitted.
+            - formenctype: (when the input type is button) indicate how to encode the information is submitted
+                * application/x-www-form-urlencoded: the default value.
+                * multipart/form-data: to send input values.
+                * text/plain: shouldn't use in a real form submission.
+            - formmethod: (when the input type is button) method with is used to submit.
+            - formnovalidate: (when the input type is button) bool that specify if is necesary validate the form.
+            - formtarget: (when the input type is button) indicate where is display the response
+                * _self: load the respone in a same context.
+                * _blank: load the response in a new tab or window.
+                * _parent: load the response in a parent frame.
+                * _top: load the response in a top frame.
+            - height: indicate the height of control in pixels.
+            - list: id of datalist that have a predefined options.
+            - max: indicate the maximum number in the element when the type is date or number.
+            - maxlength: indicate the maximum number of characters when the type is text.
+            - min: indicate the minimum number in the element when the type is date or number.
+            - minlength: indicate the minimum number of characters when the type is text.
+            - multiple: bool that indicate if the control can select more than one value (usually when type is file).
+            - name: name of control.
+            - pattern: regular expresion that should be the text.
+            - placeholder: text that describe the value that is necesary introduce in the control.
+            - popovertarget (experimental): id of the popover element.
+            - popovertargetaction (experimental): specify the action to be performed on a popover
+                * hide: hide a shown popover.
+                * show: show a hidden popover.
+                * toggle: (defalut) toggle a popover between showing and hiding.
+            - readonly: if set a true, the user can introduce value.
+            - requiered: indicate the obligation to introduce value in this control.
+            - size: width in characters of control.
+            - src: url of the image when type is image.
+            - step: interval of numbers when type is number.
+            - type: type of control
+                * button: similar to a button tag.
+                * checkbox: represent a square with two values, selected or unselected.
+                * color: show a control where you can select a color.
+                * date: show a datepicker where you can select a date.
+                * datetime-local: same that date but in this case local time too.
+                * email: control that you can set a email and validate it.
+                * file: you can selet a file.
+                * hidden: you can store value in this control but it isn't show in the page.
+                * image: represent a image.
+                * month: similar to date but in this case you can only select a month.
+                * number: you can only introduce a number.
+                * password: the text that you introduce in this control are replaced by a characters to prevent show the text.
+                * radio: this control is usually use to select between diferents options (only one).
+                * range: select range between values. This control show a line and two points that you can drag to indicate the range.
+                * reeset: similar to button type reset.
+                * search: text box to use for a search.
+                * submit: similar to button type submit.
+                * tel: texto box to introduce a number telephone.
+                * text: text box to introduce text.
+                * time: control to introduce a time.
+                * url: to introduce a url and validate it.
+                * week: control to introduce a week.
+            - value: value of the control.
+            - width: width the control in pixels.
+        Events:
+            - Global events      
+    -->
+
+
+    <form>
+        <input type="hidden" id="Iduser" value="64">
+
+        <label>Introduce tu nombre:</label><br />
+        <input type="text" placeholder="Introduce tu nombre"><br /><br />
+
+        <label>Introduce tus apellidos:</label><br />
+        <input type="text" placeholder="Introduce tus apellidos"><br /><br />
+
+        <label>Introduce tu contraseña:</label><br />
+        <input type="password" placeholder="Contraseña"><br /><br />
+
+        <label>Introduce tu fecha de nacimiento:</label><br />
+        <input type="date"><br /><br />
+
+        <label>Introduce un color:</label><br />
+        <input type="color"><br /><br />
+
+        <label>Introduce un rango de edades:</label><br />
+        <input type="range" id="AgesRange" min="18" max="45" value="30" onchange="onRangeChange()"><label id="RangeValue">30</label><br /><br />
+
+        <label>¿Eres mayor de edad?</label><br />
+        <input type="checkbox"><br /><br />
+
+        <label>Introduce tu e-mail:</label><br />
+        <input type="email"><br /><br />
+
+        <label>Introduce tu teléfono:</label><br />
+        <input type="tel"><br /><br />
+
+        <label>Selecciona tu mascota:</label><br />
+        <input type="radio" value="Perro" name="Mascota"><label>Perro</label>
+        <input type="radio" value="Gato" name="Mascota"><label>Gato</label>
+        <input type="radio" value="Pájaro" name="Mascota"><label>Pájaro</label>
+        <input type="radio" value="Ninguno" name="Mascota" checked><label>Ninguno</label><br /><br />
+
+        <label>Introduce tu web:</label><br />
+        <input type="url" placeholder="Web"><br /><br />
+
+        <label>Introduce tu foto:</label><br />
+        <input type="file" placeholder="Web" id="SelectPhoto"><br /><br />
+
+        <input type="submit" value="Guardar">
+    </form>
 </body>
 </html>
