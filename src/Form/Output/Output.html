@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Output tag</title>
 </head>
 <body>
-    
+    <!--
+        Tag that represents a result of a calculation or the result of the user action.
+        Has complety compatibility with all browsers.
+
+        Attributes: 
+            - Global attributes
+            - for: list of the controls (separated by space) that represent the result.
+            - form: the id of the form that the control is inside.
+            - name: name of the output tag.
+        Events:
+            - Global events
+    -->
+
+    <form oninput="result.value = parseInt(numberControl.value) + parseInt(rangeControl.value)">
+        <input type="range" id="rangeControl" name="rangeControl" value="50" /> +
+        <input type="number" id="numberControl" name="numberControl" value="10" /> =
+        <output name="result" for="a b">60</output>
+      </form>
 </body>
 </html>
