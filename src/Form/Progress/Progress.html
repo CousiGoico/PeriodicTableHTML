@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Progress tag</title>
 </head>
 <body>
-    
+    <!--
+        Tag that represents a progress bar, similar that meter tag.
+        Has complety compatibility with all browsers.
+
+        Attributes: 
+            - Global attributes
+            - max: max value of the progress.
+            - value: current value of the progress. If not set the value attribute, show bar similar than loading gif. 
+        Events:
+            - Global events
+    -->
+
+    <div>
+        <label for="ProgressControl">Progress:</label>
+        <progress id="ProgressControl" value="50" max="100"> 50% </progress>
+    </div>
+
+    <div>
+        <label for="ProgressControl">Loading, please wait</label>
+        <progress id="LoadingControl"></progress>
+    </div>
 </body>
 </html>
