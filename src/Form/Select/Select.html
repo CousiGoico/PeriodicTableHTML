@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Select tag</title>
 </head>
 <body>
-    
+    <!--
+        Tag that represents a combobox or list of options tags.
+        Has complety compatibility with all browsers.
+
+        Attributes: 
+            - Global attributes.
+            - autocomplete: bool that indicate if is possbile use autocomplete by browser.
+            - autofocs: get focus when the document is loaded.
+            - disabled: bool that disabled or enabled the control.
+            - form: id of the form that it's inside.
+            - multiple: indicate if it's possible select more than one option.
+            - name: name of control.
+            - required: bool that indicate if the control is required selected.
+            - size: number of options that it's visible in the list.
+        Events:
+            - Global events
+    -->
+
+    <label for="teams">Choose a team:</label>
+    <select  name="teams" id="teams">
+        <option value="RealMadrid" label="Real Madrid Club de Fútbol">Real Madrid</option>
+        <option value="Sevilla" selected>Sevilla</option>
+        <option value="CeltaVigo">Celta de Vigo</option>
+        <option value="Valladolid">Valladolid</option>
+        <option value="Valencia">Valencia</option>
+        <option value="Villareal">Villareal</option>
+    </select>
 </body>
 </html>
