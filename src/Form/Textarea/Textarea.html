@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Textarea tag</title>
 </head>
 <body>
-    
+    <!--
+        Tag that represents a big text input.
+        Has complety compatibility with all browsers.
+
+        Attributes: 
+            - Global attributes.
+            - autocomplete: value that indicate if is possbile use autocomplete by browser (off, on).
+            - autofocus: get focus when the document is loaded.
+            - disabled: bool that disabled or enabled the control.
+            - form: id of the form that it's inside.
+            - maxlength: indicate the number max of characters that the user can write.
+            - minlength: indicate the number max of characters that the user can write.
+            - name: name of control.
+            - placeholder: text that describe the value that is necesary introduce in the control.
+            - readonly: bool that indicate if the user can write or not.
+            - required: bool that indicate if the control is required selected.
+            - rows: number of visible text lines.
+            - spellcheck: specifies whether the control is subject to spell checking by the browser.
+                * true:  be spell checked.
+                * default: search a parent control that have the same attribute and have this value.
+                * false: not be spell checked.
+            - wrap: indicate how the control should wrap the text.
+                * hard: the browser automatically inserts line breakfor each line that isn't more large than the width of control.
+                * soft: The browser ensures that all line breaks in the entered value area.
+                * off: (non standard) no wrapped.
+            - size: number of options that it's visible in the list.
+        Events:
+            - Global events
+    -->
+
+    <form>
+        <label>Describe el proceso:</label><br />
+        <textarea rows="20" cols="60" maxlength="100"></textarea><br /><br />
+    </form>
 </body>
 </html>
