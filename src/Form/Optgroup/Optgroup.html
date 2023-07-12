@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Optgroup tag</title>
 </head>
 <body>
-    
+    <!--
+        Grouped options in a select tag.
+        Has complety compatibility with all browsers.
+
+        * Green is when the value is less than high value.
+        * Orange is when the value is more than high value.
+        * Red is when the value is higher than the difference between the low and the high.
+                        
+        Attributes: 
+            - Global attributes
+            - disabled: this group is disabled.
+            - label: indicate a label for agroup.
+        Events:
+            - Global events
+    -->
+
+    <label for="teams">Choose a team:</label>
+    <select  name="teams" id="teams">
+        <optgroup label="Spanish teams">
+            <option value="RealMadrid">Real Madrid</option>
+            <option value="Sevilla">Sevilla</option>
+            <option value="CeltaVigo">Celta de Vigo</option>
+        </optgroup>
+        <optgroup label="English teams" disabled>
+            <option value="ManchesterCity">Manchester City</option>
+            <option value="ManchesterUnited">Manchester United</option>
+            <option value="Chelsea">Chelsea</option>
+        </optgroup>
+    </select>
 </body>
 </html>
