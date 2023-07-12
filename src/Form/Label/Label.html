@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Label tag</title>
 </head>
 <body>
-    
+    <!--
+        Caption for an item in a user interface.
+        Has complety compatibility with all browsers.
+                        
+        Attributes: 
+            - Global attributes
+            - for: id of the control that is bound. When the user click over label, the event is throw click over control.
+        Events:
+            - Global events
+    -->
+
+    <div>
+        <label for="NameControl">Click me to focus on the input field</label><br />
+        <input type="text" id="NameControl" />
+    </div>
+
+    <div style="padding-top:10px">
+        <label class="large-label" for="SurnameControl">
+            Your surname
+            <input id="SurnameControl" name="SurnameControl" type="text" />
+        </label>
+    </div>
 </body>
 </html>
