@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meter tag</title>
 </head>
 <body>
-    
+    <!--
+        Represents a horizontal bar and range value.
+        Has complety compatibility with all browsers.
+
+        * Green is when the value is less than high value.
+        * Orange is when the value is more than high value.
+        * Red is when the value is higher than the difference between the low and the high.
+                        
+        Attributes: 
+            - Global attributes
+            - value: current numeric value.
+            - min: min value.
+            - max: max value.
+            - low: indicate the range that is consered to be a low value.
+            - high: indicate the range that is consered to be a high value.
+            - optimum: indicate the range that is the optimal value for the gauge. 
+        Events:
+            - Global events
+    -->
+
+    <div>
+        <meter low="20" optimum="50" high="80" max="100" min="0" value="40"></meter><br />
+        <meter low="20" optimum="50" high="80" max="100" min="0" value="85"></meter><br />
+        <meter low="60" high="65" max="100" min="0" value="100"></meter><br />
+    </div>
 </body>
 </html>
