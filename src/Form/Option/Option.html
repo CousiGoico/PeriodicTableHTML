@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Option tag</title>
 </head>
 <body>
-    
+    <!--
+        Option in a select tag.
+        Has complety compatibility with all browsers.
+
+        Attributes: 
+            - Global attributes
+            - disabled: this group is disabled.
+            - label: indicate a label for agroup. If this attribute is not set, then the label is the content of the tag.
+            - selected: bool that indicate that this option is initial selected.
+            - value: value of the option.
+        Events:
+            - Global events
+    -->
+
+    <label for="teams">Choose a team:</label>
+    <select  name="teams" id="teams">
+        <option value="RealMadrid" label="Real Madrid Club de Fútbol">Real Madrid</option>
+        <option value="Sevilla" selected>Sevilla</option>
+        <option value="CeltaVigo">Celta de Vigo</option>
+        <option value="Valladolid">Valladolid</option>
+        <option value="Valencia">Valencia</option>
+        <option value="Villareal">Villareal</option>
+    </select>
 </body>
 </html>
