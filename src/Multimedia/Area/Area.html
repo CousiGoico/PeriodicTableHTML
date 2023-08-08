@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script type="text/javascript" src="Area.js"></script>
+    <title><Area> - Area tag</title>
 </head>
 <body>
-    
+    <!--
+        Define an area inside of a image that area clickables.
+        Has complety compatibility with all browsers.
+
+        Attributes: 
+            - Global attributes.
+            - alt: alternative text of the area.
+            - coords: coordinates of area.
+            - download: indicate that the target will be downloaded.
+            - href: url of the hyperlink that is redirect when the area is clicked.
+            - hreflang: language of the url.
+            - media: indicate the media of the target url is optimized for.
+            - referrerpolicy: referrer information send when is clicked the link.
+            - rel: relationship between document and url (alternate, author, bookmark, help, licence, next, nofollow, noreferrer, prefetch, prev, search, tag).
+            - shape: specifies the shape of area (default, rect, circle, poly).
+            - target: how to open the link (_blank, _parent, _self, _top, framename).
+            - type: media type of the url.
+        Events:
+            - Global events
+    -->
+
+    <img src="Sistema-solar.jpg" id="myImage" alt="Planets" usemap="#planetmap" onmousedown="GetCoordinates()">
+
+    <map name="planetmap">
+        <area shape="circle" coords="25, 200, 70" href="https://es.wikipedia.org/wiki/Sol" target="_blank" alt="Sol">
+        <area shape="circle" coords="105, 220, 20" href="https://es.wikipedia.org/wiki/Mercurio_(planeta)" target="_blank" alt="Mercurio">
+        <area shape="circle" coords="170, 225, 35" href="https://es.wikipedia.org/wiki/Venus_(planeta)" target="_blank" alt="Venus">
+        <area shape="circle" coords="124,58,8" href="https://es.wikipedia.org/wiki/Tierra" target="_blank" alt="Tierra">
+        <area shape="circle" coords="90,58,3" href="https://es.wikipedia.org/wiki/Marte_(planeta)" target="_blank" alt="Marte">
+        <area shape="circle" coords="90,58,3" href="https://es.wikipedia.org/wiki/J%C3%BApiter_(planeta)" target="_blank" alt="Jupiter">
+        <area shape="circle" coords="90,58,3" href="https://es.wikipedia.org/wiki/Saturno_(planeta)" target="_blank" alt="Saturno">
+        <area shape="circle" coords="90,58,3" href="https://es.wikipedia.org/wiki/Urano_(planeta)" target="_blank" alt="Urano">
+        <area shape="circle" coords="90,58,3" href="https://es.wikipedia.org/wiki/Neptuno_(planeta)" target="_blank" alt="Neptuno">
+        <area shape="circle" coords="90,58,3" href="https://es.wikipedia.org/wiki/Plut%C3%B3n_(planeta_enano)" target="_blank" alt="Pluton">
+    </map>
 </body>
 </html>
