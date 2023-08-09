@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title><Map> - Map tag</title>
 </head>
 <body>
-    
+     <!--
+        Define a map of a image.
+        Has complety compatibility with all browsers.
+
+        Attributes: 
+            - Global attributes.
+            - name: set the name of map.
+        Events:
+            - Global events
+    -->
+
+    <img src="../../../Shared/Images/Sistema-solar.jpg" id="myImage" alt="Planets" usemap="#planetmap">
+
+    <map name="planetmap">
+        <area shape="circle" coords="25, 200, 70" href="https://es.wikipedia.org/wiki/Sol" target="_blank" alt="Sol">
+        <area shape="circle" coords="105, 220, 20" href="https://es.wikipedia.org/wiki/Mercurio_(planeta)" target="_blank" alt="Mercurio">
+        <area shape="circle" coords="170, 225, 35" href="https://es.wikipedia.org/wiki/Venus_(planeta)" target="_blank" alt="Venus">
+        <area shape="circle" coords="240, 225, 35" href="https://es.wikipedia.org/wiki/Tierra" target="_blank" alt="Tierra">
+        <area shape="circle" coords="310, 225, 32" href="https://es.wikipedia.org/wiki/Marte_(planeta)" target="_blank" alt="Marte">
+        <area shape="circle" coords="405, 220, 60" href="https://es.wikipedia.org/wiki/J%C3%BApiter_(planeta)" target="_blank" alt="Jupiter">
+        <area shape="circle" coords="530, 220, 55" href="https://es.wikipedia.org/wiki/Saturno_(planeta)" target="_blank" alt="Saturno">
+        <area shape="circle" coords="630, 225, 35" href="https://es.wikipedia.org/wiki/Urano_(planeta)" target="_blank" alt="Urano">
+        <area shape="circle" coords="710, 225, 30" href="https://es.wikipedia.org/wiki/Neptuno_(planeta)" target="_blank" alt="Neptuno">
+        <area shape="circle" coords="780, 225, 20" href="https://es.wikipedia.org/wiki/Plut%C3%B3n_(planeta_enano)" target="_blank" alt="Pluton">
+    </map>
 </body>
 </html>
