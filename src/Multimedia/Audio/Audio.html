@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title><audio> - Audio tag </title>
 </head>
 <body>
-    
+    <!--
+        Control of an audio player.
+        Has complety compatibility with all browsers.
+
+        Attributes: 
+            - Global attributes.
+            - autoplay: ('autoplay') indicate if the player will start when is ready.
+            - controls: ('controls') show or not the controls to play.
+            - loop: ('loop') if you want to repeat the same audio.
+            - muted: ('muted') this attribute set muted the audio.
+            - preload: ('auto', 'metadata', 'none') this value indicate if you want that the audio or metadata is preloaded.
+            - src: url of the audio.
+            - crossorigin ('anonymous', 'use-credentials'): indicate whether to user CORS with the audio file.
+        Events:
+            - Global events
+            - audioprocess: the input buffer is ready to be processed.
+            - canplay: the browser can play but not is preloaded.
+            - canplaythrough: the browser estimates that can play it to the end.
+            - complete: when the audio is terminated.
+            - durationchange: event throw when the duration is changed.
+            - emptied: when the media is loaded but has become empty.
+            - ended: the audio is ended.
+            - loadeddata: is loaded the first frame of the media.
+            - loadedmetadata: has been loaded the metadata.
+            - loadstart: when has started the media.
+            - pause: is throw when the media is paused.
+            - play: is throw when the media is played.
+            - playing: while the media is playing.
+            - ratechange: when the rate is changed.
+            - seeked: a seek operation completed.
+            - seeking: a seek operation began.
+            - stalled: the user agent is trying to fetch media data, but data is unexpectedly not forthcoming.
+            - suspend: media data loading has been suspended.
+            - timeupdate: when the currentTime is updated.
+            - volumechange: when the volume level is changed.
+            - waiting: playback has stopped because of a temporary lack of data.
+    -->
+
+
 </body>
 </html>
