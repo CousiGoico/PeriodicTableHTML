@@ -4,9 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Script tag</title>
 </head>
 <body>
-    
+    <!--
+        Specify the type of the script that you will add.
+        Has complety compatibility with all browsers.
+
+        Attributes: 
+            - Global attributes.
+            - async: the script will be fetched in parrallel.
+            - crossorigin: use cors.
+            - defer: boolean attribute to indicate that the script is meant to be executed after the document has been parsed.
+            - integrity: metadata that a user agent can use to verify that a resource is free of unexpected manipulation.
+            - nomodule: boolean attribute to indicate the script should not be executed in browsers that supports ES modules. 
+            - nonce: cryptographic number used once to allow scripts in a script-src-content-security-policy.
+            - referrerpolicy: indicate which referrer to send when fetching the script.
+                - no-referrer
+                - no-referrer-when-downgrade
+                - origin
+                - origin-when-cross-origin
+                - same-origin
+                - strict-origin
+                - strict-origin-when-cross-origin
+                - unsafe-url
+            - src: uri of the script document to load.
+            - type: 
+                - JavaScript (default): application/javascript, application/ecmascript.
+                - module
+                - Another mime type.
+        Events:
+            - Global events
+    -->
+
+    <script>
+        console.log("Hola, mundo!");
+    </script>
+
+    <script src="javascript.js"></script>
+
+    <!-- Example with imports-->
+
+    <!-- JS 
+        import { name as squareName, draw } from "./shapes/square.js";
+        import { name as circleName } from "https://example.com/shapes/circle.js";
+    -->
+
+    <script type="importmap">
+        {
+          "imports": {
+            "square": "./shapes/square.js",
+            "circle": "https://example.com/shapes/circle.js"
+          }
+        }
+      </script>
 </body>
 </html>
